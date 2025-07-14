@@ -2,9 +2,9 @@
 pragma solidity ^0.8.19;
 
 import "forge-std/Test.sol";
-import "../../src/kUSDToken.sol";
+import "../../src/HUSDToken.sol";
 
-contract BaseKAMForkTest is Test {
+contract BaseHForkTest is Test {
     // Common test variables
     address public admin;
     address public user1;

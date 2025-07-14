@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
 
-import "../base/BaseKAMTest.t.sol";
+import "../base/BaseHTest.t.sol";
 import "../../src/HUSDToken.sol";
 
-contract HUSDTokenTest is BaseKAMTest {
+contract HUSDTokenTest is BaseHTest {
     HUSDToken public token;
     
     function setUp() public override {

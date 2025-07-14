@@ -13,11 +13,11 @@ import { UUPSUpgradeable } from "../lib/solady/src/utils/UUPSUpgradeable.sol";
 import { IhUSDToken } from "./Interfaces/IhUSDToken.sol";
 
 /**
- * @title KAMManager
- * @notice Main protocol entry point for kUSD Protocol with EIP-712 signatures
+ * @title HManager
+ * @notice Main protocol entry point for H Protocol with EIP-712 signatures
  * @dev UUPS upgradeable, Solady-optimized, EIP-712 signature validation
  */
-contract KAMManager is OwnableRoles, UUPSUpgradeable, Initializable, ReentrancyGuard, EIP712 {
+contract HManager is OwnableRoles, UUPSUpgradeable, Initializable, ReentrancyGuard, EIP712 {
     using ECDSA for bytes32;
 
     /*//////////////////////////////////////////////////////////////
@@ -36,7 +36,7 @@ contract KAMManager is OwnableRoles, UUPSUpgradeable, Initializable, ReentrancyG
                             EIP-712 CONSTANTS
     //////////////////////////////////////////////////////////////*/
     /// @notice EIP-712 domain name
-    string private constant DOMAIN_NAME = "KAMManager";
+    string private constant DOMAIN_NAME = "HManager";
     /// @notice EIP-712 domain version
     string private constant DOMAIN_VERSION = "1";
 
@@ -247,7 +247,7 @@ contract KAMManager is OwnableRoles, UUPSUpgradeable, Initializable, ReentrancyG
     }
 
     /// @notice Redeem kUSD with EIP-712 signed order
-    /// @dev Only KAM backend can create valid signatures
+    /// @dev Only H backend can create valid signatures
     function redeemKUSD(
         Order calldata order,
         bytes calldata signature
