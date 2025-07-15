@@ -21,7 +21,7 @@ OFT Token (HToken) is a sophisticated stablecoin protocol that combines institut
 
 ```
 ┌─────────────────┐    ┌──────────────────┐     ┌─────────────────┐
-│   HUSDToken     │◄───┤   HManager     │────►│   HUSDVault     │
+│   HUSDToken     │◄───┤   HManager       │────►│   HUSDVault     │
 │   (Immutable)   │    │  (Upgradeable)   │     │ (ERC4626/7540)  │
 └─────────────────┘    └──────────────────┘     └─────────────────┘
         │                        │                        │
@@ -29,7 +29,7 @@ OFT Token (HToken) is a sophisticated stablecoin protocol that combines institut
         │              ┌──────────────────┐               │
         │              │   Off-Chain      │               │
         └──────────────┤   Systems        │◄──────────────┘
-                       │ MPC + Vault  │
+                       │ MPC + Vault      │
                        └──────────────────┘
 ```
 
