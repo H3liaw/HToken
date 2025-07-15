@@ -1,4 +1,4 @@
-# kUSD Protocol
+# Layerzero OFT USD Protocol
 
 [![Foundry](https://img.shields.io/badge/Built%20with-Foundry-FFDB1C.svg)](https://getfoundry.sh/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -6,7 +6,7 @@
 
 > **Multi-Collateral Yield-Bearing Stablecoin Protocol**
 
-HUSD is a sophisticated stablecoin protocol that combines institutional-grade asset management with public yield opportunities through a multi-collateral approach.
+OFT Token (HToken) is a sophisticated stablecoin protocol that combines institutional-grade asset management with public yield opportunities through a multi-collateral approach.
 
 ## 🎯 Overview
 
